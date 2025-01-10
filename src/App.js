@@ -9,7 +9,6 @@ const App = () => {
   const { accounts } = useMsal();
   const account = useAccount(accounts[0] || {});
 
-  console.log("account@@@@@", account);
   return (
     <div className="mainContainer">
       <Profile />
