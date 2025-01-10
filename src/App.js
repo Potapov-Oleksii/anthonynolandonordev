@@ -8,7 +8,7 @@ import { useMsal, useAccount } from "@azure/msal-react";
 const App = () => {
   const { accounts } = useMsal();
   const account = useAccount(accounts[0] || {});
-
+  console.log("ACCOUNT", account);
   return (
     <div className="mainContainer">
       <Profile />
