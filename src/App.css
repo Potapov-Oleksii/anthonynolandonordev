@@ -1,0 +1,74 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: beige;
+  height: 100vh;
+  width: 100vw;
+}
+.button {
+  width: 100px;
+  height: 50px;
+  margin-top: 30px;
+}
+.userForm {
+  height: 400px;
+  width: 80vw;
+  background-color: wheat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.profileWrapper {
+  min-height: 400px;
+  width: 80vw;
+  background-color: wheat;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+.profileTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout {
+  height: 40px;
+  width: 80px;
+  position: absolute;
+  bottom: 10px;
+}
+.userData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: flex-end; */
+}
+.userDataRow {
+  padding-top: 50px;
+  height: 30px;
+}
+
+.loader {
+  width: 38px;
+  height: 38px;
+  border: 5px solid lightgray;
+  border-bottom-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
