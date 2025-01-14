@@ -10,7 +10,7 @@ const Profile = () => {
   return account ? (
     <div className="profileWrapper">
       <div className="profileTitle">
-        <h1>Welcome, {account.name}!</h1>
+        <h1>Welcome, {account?.idTokenClaims?.extension_FirstName}!</h1>
       </div>
       <div className="userData">
         <div className="userDataRow">
