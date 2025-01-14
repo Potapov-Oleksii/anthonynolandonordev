@@ -26,7 +26,7 @@ const Profile = () => {
         </div>
         <div className="userDataRow">
           <b>Name: </b>
-          {account?.extension_FirstName || ""}
+          {account?.idTokenClaims?.extension_FirstName || ""}
         </div>
       </div>
     </div>
