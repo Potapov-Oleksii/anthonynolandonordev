@@ -17,7 +17,8 @@ const Profile = () => {
           <b>Email:</b> {account.username || ""}
         </div>
         <div className="userDataRow">
-          <b>Donor ID:</b> {account?.idTokenClaims.extension_DonorId || ""}
+          <b>Donor ID:</b>{" "}
+          {account?.idTokenClaims.extension_DonorRegisterNumber || ""}
         </div>
         <div className="userDataRow">
           <b>Date Of Birth:</b>{" "}
@@ -25,7 +26,7 @@ const Profile = () => {
         </div>
         <div className="userDataRow">
           <b>Name: </b>
-          {account?.name || ""}
+          {account?.extension_FirstName || ""}
         </div>
       </div>
     </div>
